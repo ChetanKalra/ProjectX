@@ -1,0 +1,9 @@
+1. cordova create Folder_name com.example.x file_name
+
+2. Adding platform to the project
+	- cordova platform add android --save
+	- cordova platform add ios --save
+
+3. cordova platform ls
+
+4. Library/Android/sdk/tools

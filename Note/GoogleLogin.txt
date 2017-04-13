@@ -1,0 +1,29 @@
+1. https://www.npmjs.com/package/cordova-plugin-googleplus
+
+2. Generating a configuration file 
+- https://developers.google.com/mobile/add?platform=android&cntapi=signin	
+3a. key tool steps
+	- https://developers.google.com/android/guides/client-auth
+
+b. Correct command: keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v
+
+4. Generating Client ID from: Google Developer's Console
+- https://console.developers.google.com/apis/credentials?project=projectx-c6305
+
+5. cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=com.googleusercontent.apps.1029933643127-r7avt0pt4eqcvjt8q2e4id1o2aq3skhk
+
+
+ClientID: 1029933643127-r7avt0pt4eqcvjt8q2e4id1o2aq3skhk.apps.googleusercontent.com
+
+6.Installation
+
+$ cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=myreversedclientid
+$ cordova prepare
+
+7. Config.xml
+
+<plugin name="cordova-plugin-googleplus" spec="https://github.com/EddyVerbruggen/cordova-plugin-googleplus">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.1029933643127-r7avt0pt4eqcvjt8q2e4id1o2aq3skhk" />
+    </plugin>
+
+8. googleplus call must be in the deviceReady function

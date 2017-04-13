@@ -1,0 +1,27 @@
+Phase 1:
+1. Login: Google+ , SignUp(Username, Password)
+
+Phase 2: 
+1. After successful login, go to profile
+	- List of active threads
+		- can view the thread on click
+	- Count of deleted threads
+	- Link to create new thread
+	- Link to view all existing threads
+
+Phase 3:
+1. Creating new thread
+	- Random Image
+	- Timer of 10 seconds
+	- 5 mins to write a thread
+	- auto submit on timeout
+	- Displaying in most recent threads
+	- Updated Profile
+
+Phase 4: 
+1. All threads
+	- Like and Dislike
+	- Deletion if condition becomes true(Dislikes == Likes + 10)
+	- Filter (Most Recent, Most no of Likes, Most Dislikes)
+	- Able to follow a Uploader
+	 
